@@ -9,7 +9,7 @@ const activeChain = 'mumbai';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<ThirdwebProvider activeChain={activeChain}>
+		<ThirdwebProvider activeChain={activeChain} clientId="dbe887550602ce19ddcc82041fdc6f01">
 			<ChakraProvider>
 				<Component {...pageProps} />
 			</ChakraProvider>

@@ -12,18 +12,19 @@ const Home: NextPage = () => {
 const address = useAddress();
 
   return (
-    <Container maxW="1440px">
-        <Flex justifyContent={"center"} alignItems={"center"} height={"100vh"} flexDirection={"column"}>
-        <ConnectWallet />
-        <Box h={"20px"}></Box>
+		<Container maxW='1440px'>
+			<Flex
+				justifyContent={'center'}
+				alignItems={'center'}
+				height={'100vh'}
+				flexDirection={'column'}>
+				<ConnectWallet theme='dark'/>
+				<Box h={'20px'}></Box>
 
-        {address && (
-          <AccountablityCard />
-        )}
-
-        </Flex>
-      </Container>
-  );
+				{address && <AccountablityCard />}
+			</Flex>
+		</Container>
+	);
 };
 
 export default Home;
